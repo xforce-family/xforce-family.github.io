@@ -36,7 +36,7 @@
     
     
       
-        <title>Say - XForce Documentation</title>
+        <title>Add Msg - XForce Documentation</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#prefix-say" tabindex="1" class="md-skip">
+      <a href="#prefix-addmsg" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Say
+                Add Msg
               
             </span>
           
@@ -333,56 +333,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Say
-      </label>
-    
-    <a href="./" title="Say" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../say/" title="Say" class="md-nav__link">
       Say
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -414,11 +369,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../addmsg/" title="Add Msg" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Add Msg
+      </label>
+    
+    <a href="./" title="Add Msg" class="md-nav__link md-nav__link--active">
       Add Msg
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#message-type" class="md-nav__link">
+    Message Type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -453,8 +453,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#message-type" class="md-nav__link">
+    Message Type
   </a>
   
 </li>
@@ -482,19 +482,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/xforce-family/edit/master/docs/nongviewbot48/commands/say.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/xforce-family/edit/master/docs/nongviewbot48/commands/addmsg.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="prefix-say">{Prefix} say</h1>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว say &lt;#channel&gt; &lt;custom image/message&gt;</span>
+                <h1 id="prefix-addmsg">{Prefix} addmsg</h1>
+<p>คำสั่งนี้จะเพิ่มคำพูดให้น้องหลาวสามารถพิมตอบตามสถานการณ์ต่างๆ</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว addmsg &lt;type&gt; &lt;custom image/message&gt;</span>
 </pre></div>
 </td></tr></table>
 
-<h2 id="example">Example</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว say #th48-mainland ..</span>
-</pre></div>
-</td></tr></table>
-
+<h2 id="message-type">Message Type</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Type</th>
+<th align="center">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">noperm</td>
+<td align="center">"Text or Image or Both" for answer when someone with no permission trigger the command</td>
+</tr>
+<tr>
+<td align="center">mute_message</td>
+<td align="center">"Text or Image or Both" for answer when muted someone</td>
+</tr>
+<tr>
+<td align="center">help</td>
+<td align="center">"Text or Image or Both" for answer when someone trigger "ช่วยด้วย" command</td>
+</tr>
+</tbody>
+</table>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -508,18 +527,18 @@
 </thead>
 <tbody>
 <tr>
-<td>channel</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-<td align="center">Current Channel</td>
-<td align="center">Channel for send a message</td>
+<td>type</td>
+<td align="center">No</td>
+<td align="center">No</td>
+<td align="center">-</td>
+<td align="center">Message Catefory</td>
 </tr>
 <tr>
-<td>custom message</td>
+<td>Message or Image</td>
 <td align="center">No</td>
 <td align="center">Yes</td>
-<td align="center">Random Message</td>
-<td align="center">Message to send after mute boardcast. Can be image or message or both</td>
+<td align="center">-</td>
+<td align="center">"Text or Image or Both" for answer</td>
 </tr>
 </tbody>
 </table>
@@ -544,7 +563,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../mute/" title="Mute" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../toggleinteractive/" title="Toggle Interactive" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -553,25 +572,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mute
+                Toggle Interactive
               </span>
             </div>
           </a>
         
-        
-          <a href="../addinteractive/" title="Add Interactive" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Add Interactive
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

@@ -36,7 +36,7 @@
     
     
       
-        <title>Say - XForce Documentation</title>
+        <title>Add Interactive - XForce Documentation</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#prefix-say" tabindex="1" class="md-skip">
+      <a href="#prefix-addinteractive" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Say
+                Add Interactive
               
             </span>
           
@@ -333,6 +333,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../say/" title="Say" class="md-nav__link">
+      Say
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -344,11 +356,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Say
+        Add Interactive
       </label>
     
-    <a href="./" title="Say" class="md-nav__link md-nav__link--active">
-      Say
+    <a href="./" title="Add Interactive" class="md-nav__link md-nav__link--active">
+      Add Interactive
     </a>
     
       
@@ -360,6 +372,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
@@ -383,18 +402,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../addinteractive/" title="Add Interactive" class="md-nav__link">
-      Add Interactive
-    </a>
   </li>
 
         
@@ -453,6 +460,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     Example
   </a>
@@ -482,19 +496,19 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/xforce-family/edit/master/docs/nongviewbot48/commands/say.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/xforce-family/edit/master/docs/nongviewbot48/commands/addinteractive.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="prefix-say">{Prefix} say</h1>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว say &lt;#channel&gt; &lt;custom image/message&gt;</span>
+                <h1 id="prefix-addinteractive">{Prefix} addinteractive</h1>
+<p>คำสั่งนี้จะเพิ่มคำพูดให้น้องหลาวสามารถพิมตอบคำนั้นได้</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว addinteractive</span>
 </pre></div>
 </td></tr></table>
 
+<h2 id="usage">Usage</h2>
+<p>น้องหลาวจะถามคำถามสองอย่าง อย่างแรกคือคำถามที่จะให้ตอบ และ คำตอบทีจะให้ตอบกลับไป</p>
 <h2 id="example">Example</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว say #th48-mainland ..</span>
-</pre></div>
-</td></tr></table>
-
+<p><img alt="EX" src="https://i.imgur.com/1QYS6Y6.png" /></p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -508,18 +522,18 @@
 </thead>
 <tbody>
 <tr>
-<td>channel</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-<td align="center">Current Channel</td>
-<td align="center">Channel for send a message</td>
+<td>question</td>
+<td align="center">No</td>
+<td align="center">No</td>
+<td align="center">-</td>
+<td align="center">"Text" for triggering answer</td>
 </tr>
 <tr>
-<td>custom message</td>
+<td>answer</td>
 <td align="center">No</td>
 <td align="center">Yes</td>
-<td align="center">Random Message</td>
-<td align="center">Message to send after mute boardcast. Can be image or message or both</td>
+<td align="center">-</td>
+<td align="center">"Text or Image or Both" for answer</td>
 </tr>
 </tbody>
 </table>
@@ -544,7 +558,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../mute/" title="Mute" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../say/" title="Say" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -553,19 +567,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mute
+                Say
               </span>
             </div>
           </a>
         
         
-          <a href="../addinteractive/" title="Add Interactive" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../toggleinteractive/" title="Toggle Interactive" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Add Interactive
+                Toggle Interactive
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
