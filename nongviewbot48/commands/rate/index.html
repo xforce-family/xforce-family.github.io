@@ -36,7 +36,7 @@
     
     
       
-        <title>Blackhole - XForce Documentation</title>
+        <title>Rate - XForce Documentation</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#prefix-bh" tabindex="1" class="md-skip">
+      <a href="#prefix-mute" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Blackhole
+                Rate
               
             </span>
           
@@ -333,56 +333,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Blackhole
-      </label>
-    
-    <a href="./" title="Blackhole" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../blackhole/" title="Blackhole" class="md-nav__link">
       Blackhole
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -438,11 +393,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../rate/" title="Rate" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Rate" class="md-nav__link md-nav__link--active">
       Rate
     </a>
+    
   </li>
 
         
@@ -473,29 +437,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -506,61 +447,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/xforce-family/edit/master/docs/nongviewbot48/commands/blackhole.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/xforce-family/edit/master/docs/nongviewbot48/commands/rate.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="prefix-bh">{Prefix} bh</h1>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว bh &lt;time&gt; &lt;#channel&gt; &lt;@user&gt; &lt;custom image/message&gt;</span>
+                <h1 id="prefix-mute">{Prefix} mute</h1>
+<p>คำสั่งนี้ใช้ดู / คำนวนอัตราการส่งข้อความในแชแนลนั้นๆ</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว rate</span>
 </pre></div>
 </td></tr></table>
-
-<h2 id="example">Example</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">น้องหลาว bh 10s #testroom @holfz4848 testing message</span>
-</pre></div>
-</td></tr></table>
-
-<h2 id="arguments">Arguments</h2>
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th align="center">Optional</th>
-<th align="center">Multi Selectable</th>
-<th align="center">Default Value</th>
-<th align="center">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>time</td>
-<td align="center">No</td>
-<td align="center">No</td>
-<td align="center">-</td>
-<td align="center">Duration for this blackhole</td>
-</tr>
-<tr>
-<td>channel</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-<td align="center">Current Channel</td>
-<td align="center">Channel for boardcast about blackhole</td>
-</tr>
-<tr>
-<td>user</td>
-<td align="center">No</td>
-<td align="center">Yes</td>
-<td align="center">-</td>
-<td align="center">User to blackhole</td>
-</tr>
-<tr>
-<td>custom message</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-<td align="center">Random Message</td>
-<td align="center">Message to send after lackhole boardcast. Can be image or message or both</td>
-</tr>
-</tbody>
-</table>
                 
                   
                 
@@ -582,7 +476,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../mute/" title="Mute" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../addmsg/" title="Add Msg" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -591,25 +485,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mute
+                Add Msg
               </span>
             </div>
           </a>
         
-        
-          <a href="../say/" title="Say" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Say
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
